@@ -6,15 +6,14 @@
 
 class nBlock_OLEDisplay: public nBlockSimpleNode<1> {
 public:
-
-    nBlock_OLEDisplay(PinName pinSDA, PinName pinSCL);
+    nBlock_OLEDisplay(PinName pinSDA, PinName pinSCL, PinName pinRST);
     void triggerInput(nBlocks_Message message);
     void endFrame(void);
-
+    
 private:
 	I2C _i2c;
-	int _flagReadRequested;
-	
+    Adafruit_SSD1306_I2c * _gfx;
+	int data_received;	
 };
 
 #endif
