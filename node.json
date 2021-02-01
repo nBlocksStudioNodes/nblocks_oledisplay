@@ -1,0 +1,49 @@
+{
+    "category": "Display",
+    "name": "OLEDisplay",
+    "inputs": 1,
+    "outputs": 0,
+    "parameters": [
+        {
+            "name": "pinSDA",
+            "type": "raw",
+            "default": "p9",
+            "options": [
+                ""
+            ],
+            "value": "p9"
+        },
+        {
+            "name": "pinSCL",
+            "type": "raw",
+            "default": "p10",
+            "options": [
+                ""
+            ],
+            "value": "p10"
+        },
+        {
+            "name": "pinRST",
+            "type": "raw",
+            "default": "NC",
+            "options": [
+                ""
+            ],
+            "value": "NC"
+        }
+    ],
+    "labels": {
+        "input": [],
+        "output": []
+    },
+    "schematic_pins": {
+        "inputs": [
+            1
+        ],
+        "outputs": [
+            0
+        ]
+    },
+    "repository": "https://github.com/nBlocksStudioNodes/nblocks_oledisplay",
+    "revision": ""
+}
